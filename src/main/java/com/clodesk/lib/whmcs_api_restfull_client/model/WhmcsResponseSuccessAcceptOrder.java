@@ -21,17 +21,14 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * WhmcsResponseSuccessUpdateClientProduct
+ * WhmcsResponseSuccessAcceptOrder
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T14:57:36.589Z")
-public class WhmcsResponseSuccessUpdateClientProduct {
+public class WhmcsResponseSuccessAcceptOrder {
   @JsonProperty("result")
   private String result = null;
 
-  @JsonProperty("serviceid")
-  private Integer serviceid = null;
-
-  public WhmcsResponseSuccessUpdateClientProduct result(String result) {
+  public WhmcsResponseSuccessAcceptOrder result(String result) {
     this.result = result;
     return this;
   }
@@ -49,24 +46,6 @@ public class WhmcsResponseSuccessUpdateClientProduct {
     this.result = result;
   }
 
-  public WhmcsResponseSuccessUpdateClientProduct serviceid(Integer serviceid) {
-    this.serviceid = serviceid;
-    return this;
-  }
-
-   /**
-   * The Id of the updated service
-   * @return serviceid
-  **/
-  @ApiModelProperty(value = "The Id of the updated service")
-  public Integer getServiceid() {
-    return serviceid;
-  }
-
-  public void setServiceid(Integer serviceid) {
-    this.serviceid = serviceid;
-  }
-
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -76,24 +55,22 @@ public class WhmcsResponseSuccessUpdateClientProduct {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    WhmcsResponseSuccessUpdateClientProduct whmcsResponseSuccessUpdateClientProduct = (WhmcsResponseSuccessUpdateClientProduct) o;
-    return Objects.equals(this.result, whmcsResponseSuccessUpdateClientProduct.result) &&
-        Objects.equals(this.serviceid, whmcsResponseSuccessUpdateClientProduct.serviceid);
+    WhmcsResponseSuccessAcceptOrder whmcsResponseSuccessAcceptOrder = (WhmcsResponseSuccessAcceptOrder) o;
+    return Objects.equals(this.result, whmcsResponseSuccessAcceptOrder.result);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(result, serviceid);
+    return Objects.hash(result);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class WhmcsResponseSuccessUpdateClientProduct {\n");
+    sb.append("class WhmcsResponseSuccessAcceptOrder {\n");
     
     sb.append("    result: ").append(toIndentedString(result)).append("\n");
-    sb.append("    serviceid: ").append(toIndentedString(serviceid)).append("\n");
     sb.append("}");
     return sb.toString();
   }

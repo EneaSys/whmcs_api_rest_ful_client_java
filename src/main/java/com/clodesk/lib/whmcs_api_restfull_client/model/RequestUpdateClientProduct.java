@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * RequestUpdateClientProduct
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T13:15:38.447Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T14:57:36.589Z")
 public class RequestUpdateClientProduct {
   @JsonProperty("serviceid")
   private Integer serviceid = null;
@@ -396,10 +396,10 @@ public class RequestUpdateClientProduct {
   }
 
    /**
-   * Should override auto suspend be provided (‘on’ or ‘off’)
+   * Should override auto suspend be provided (�on� or �off�)
    * @return overideautosuspend
   **/
-  @ApiModelProperty(value = "Should override auto suspend be provided (‘on’ or ‘off’)")
+  @ApiModelProperty(value = "Should override auto suspend be provided (�on� or �off�)")
   public String getOverideautosuspend() {
     return overideautosuspend;
   }
@@ -620,10 +620,10 @@ public class RequestUpdateClientProduct {
   }
 
    /**
-   * An array of items to unset. Can be one of: ‘domain’, ‘serviceusername’, ‘servicepassword’, ‘subscriptionid’, ‘ns1’, ‘ns2’, ‘dedicatedip’, ‘assignedips’, ‘notes’, ‘suspendreason’
+   * An array of items to unset. Can be one of: �domain�, �serviceusername�, �servicepassword�, �subscriptionid�, �ns1�, �ns2�, �dedicatedip�, �assignedips�, �notes�, �suspendreason�
    * @return unset
   **/
-  @ApiModelProperty(value = "An array of items to unset. Can be one of: ‘domain’, ‘serviceusername’, ‘servicepassword’, ‘subscriptionid’, ‘ns1’, ‘ns2’, ‘dedicatedip’, ‘assignedips’, ‘notes’, ‘suspendreason’")
+  @ApiModelProperty(value = "An array of items to unset. Can be one of: �domain�, �serviceusername�, �servicepassword�, �subscriptionid�, �ns1�, �ns2�, �dedicatedip�, �assignedips�, �notes�, �suspendreason�")
   public List<String> getUnset() {
     return unset;
   }
@@ -656,10 +656,10 @@ public class RequestUpdateClientProduct {
   }
 
    /**
-   * Base64 encoded serialized array of custom field values - base64_encode(serialize(array(“1”&#x3D;&gt;“Yahoo”)));
+   * Base64 encoded serialized array of custom field values - base64_encode(serialize(array(�1�&#x3D;&gt;�Yahoo�)));
    * @return customfields
   **/
-  @ApiModelProperty(value = "Base64 encoded serialized array of custom field values - base64_encode(serialize(array(“1”=>“Yahoo”)));")
+  @ApiModelProperty(value = "Base64 encoded serialized array of custom field values - base64_encode(serialize(array(�1�=>�Yahoo�)));")
   public String getCustomfields() {
     return customfields;
   }
@@ -674,10 +674,10 @@ public class RequestUpdateClientProduct {
   }
 
    /**
-   * Base64 encoded serialized array of configurable option field values - base64_encode(serialize(array(configoptionid &#x3D;&gt; dropdownoptionid, XXX &#x3D;&gt; array(‘optionid’ &#x3D;&gt; YYY, ‘qty’ &#x3D;&gt; ZZZ)))) - XXX is the ID of the configurable option - YYY is the optionid found in tblhostingconfigoption.optionid - ZZZ is the quantity you want to use for that option
+   * Base64 encoded serialized array of configurable option field values - base64_encode(serialize(array(configoptionid &#x3D;&gt; dropdownoptionid, XXX &#x3D;&gt; array(�optionid� &#x3D;&gt; YYY, �qty� &#x3D;&gt; ZZZ)))) - XXX is the ID of the configurable option - YYY is the optionid found in tblhostingconfigoption.optionid - ZZZ is the quantity you want to use for that option
    * @return configoptions
   **/
-  @ApiModelProperty(value = "Base64 encoded serialized array of configurable option field values - base64_encode(serialize(array(configoptionid => dropdownoptionid, XXX => array(‘optionid’ => YYY, ‘qty’ => ZZZ)))) - XXX is the ID of the configurable option - YYY is the optionid found in tblhostingconfigoption.optionid - ZZZ is the quantity you want to use for that option")
+  @ApiModelProperty(value = "Base64 encoded serialized array of configurable option field values - base64_encode(serialize(array(configoptionid => dropdownoptionid, XXX => array(�optionid� => YYY, �qty� => ZZZ)))) - XXX is the ID of the configurable option - YYY is the optionid found in tblhostingconfigoption.optionid - ZZZ is the quantity you want to use for that option")
   public String getConfigoptions() {
     return configoptions;
   }

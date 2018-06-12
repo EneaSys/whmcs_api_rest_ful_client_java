@@ -21,17 +21,17 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * WhmcsResponseSuccessUpdateClientProduct
+ * WhmcsResponseErrorGeneric
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T14:57:36.589Z")
-public class WhmcsResponseSuccessUpdateClientProduct {
+public class WhmcsResponseErrorGeneric {
   @JsonProperty("result")
   private String result = null;
 
-  @JsonProperty("serviceid")
-  private Integer serviceid = null;
+  @JsonProperty("message")
+  private String message = null;
 
-  public WhmcsResponseSuccessUpdateClientProduct result(String result) {
+  public WhmcsResponseErrorGeneric result(String result) {
     this.result = result;
     return this;
   }
@@ -49,22 +49,22 @@ public class WhmcsResponseSuccessUpdateClientProduct {
     this.result = result;
   }
 
-  public WhmcsResponseSuccessUpdateClientProduct serviceid(Integer serviceid) {
-    this.serviceid = serviceid;
+  public WhmcsResponseErrorGeneric message(String message) {
+    this.message = message;
     return this;
   }
 
    /**
-   * The Id of the updated service
-   * @return serviceid
+   * The message of error
+   * @return message
   **/
-  @ApiModelProperty(value = "The Id of the updated service")
-  public Integer getServiceid() {
-    return serviceid;
+  @ApiModelProperty(value = "The message of error")
+  public String getMessage() {
+    return message;
   }
 
-  public void setServiceid(Integer serviceid) {
-    this.serviceid = serviceid;
+  public void setMessage(String message) {
+    this.message = message;
   }
 
 
@@ -76,24 +76,24 @@ public class WhmcsResponseSuccessUpdateClientProduct {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    WhmcsResponseSuccessUpdateClientProduct whmcsResponseSuccessUpdateClientProduct = (WhmcsResponseSuccessUpdateClientProduct) o;
-    return Objects.equals(this.result, whmcsResponseSuccessUpdateClientProduct.result) &&
-        Objects.equals(this.serviceid, whmcsResponseSuccessUpdateClientProduct.serviceid);
+    WhmcsResponseErrorGeneric whmcsResponseErrorGeneric = (WhmcsResponseErrorGeneric) o;
+    return Objects.equals(this.result, whmcsResponseErrorGeneric.result) &&
+        Objects.equals(this.message, whmcsResponseErrorGeneric.message);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(result, serviceid);
+    return Objects.hash(result, message);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class WhmcsResponseSuccessUpdateClientProduct {\n");
+    sb.append("class WhmcsResponseErrorGeneric {\n");
     
     sb.append("    result: ").append(toIndentedString(result)).append("\n");
-    sb.append("    serviceid: ").append(toIndentedString(serviceid)).append("\n");
+    sb.append("    message: ").append(toIndentedString(message)).append("\n");
     sb.append("}");
     return sb.toString();
   }
