@@ -18,7 +18,7 @@ import com.clodesk.lib.whmcs_api_restfull_client.invoker.Pair;
 import java.util.Map;
 import java.util.List;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T14:57:36.589Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T15:17:02.217Z")
 public class OAuth implements Authentication {
   private String accessToken;
 

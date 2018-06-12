@@ -28,7 +28,7 @@ Add this dependency to your project's POM:
 <dependency>
     <groupId>com.clodesk.lib</groupId>
     <artifactId>whmcs-api-restfull-client</artifactId>
-    <version>0.1.0</version>
+    <version>0.0.1</version>
     <scope>compile</scope>
 </dependency>
 ```
@@ -71,12 +71,12 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         
         DefaultApi apiInstance = new DefaultApi();
-        RequestAddOrder apiParameters = new RequestAddOrder(); // RequestAddOrder | 
+        RequestAcceptOrder apiParameters = new RequestAcceptOrder(); // RequestAcceptOrder | 
         try {
-            WhmcsResponseSuccessAddOrder result = apiInstance.addOrder(apiParameters);
+            WhmcsResponseSuccessAcceptOrder result = apiInstance.acceptOrder(apiParameters);
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling DefaultApi#addOrder");
+            System.err.println("Exception when calling DefaultApi#acceptOrder");
             e.printStackTrace();
         }
     }
@@ -90,15 +90,18 @@ All URIs are relative to *https://www.sm-host.com/modules/addons/rest_ful*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*DefaultApi* | [**acceptOrder**](docs/DefaultApi.md#acceptOrder) | **POST** /AcceptOrder | Accepts a pending order
 *DefaultApi* | [**addOrder**](docs/DefaultApi.md#addOrder) | **POST** /AddOrder | Add order
 *DefaultApi* | [**updateClientProduct**](docs/DefaultApi.md#updateClientProduct) | **POST** /UpdateClientProduct | Update client Product
 
 
 ## Documentation for Models
 
+ - [RequestAcceptOrder](docs/RequestAcceptOrder.md)
  - [RequestAddOrder](docs/RequestAddOrder.md)
  - [RequestUpdateClientProduct](docs/RequestUpdateClientProduct.md)
- - [WhmcsResponseGeneric](docs/WhmcsResponseGeneric.md)
+ - [WhmcsResponseErrorGeneric](docs/WhmcsResponseErrorGeneric.md)
+ - [WhmcsResponseSuccessAcceptOrder](docs/WhmcsResponseSuccessAcceptOrder.md)
  - [WhmcsResponseSuccessAddOrder](docs/WhmcsResponseSuccessAddOrder.md)
  - [WhmcsResponseSuccessUpdateClientProduct](docs/WhmcsResponseSuccessUpdateClientProduct.md)
 
