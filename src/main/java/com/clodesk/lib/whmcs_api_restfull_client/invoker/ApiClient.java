@@ -55,7 +55,7 @@ import com.clodesk.lib.whmcs_api_restfull_client.invoker.auth.HttpBasicAuth;
 import com.clodesk.lib.whmcs_api_restfull_client.invoker.auth.ApiKeyAuth;
 import com.clodesk.lib.whmcs_api_restfull_client.invoker.auth.OAuth;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T13:15:38.447Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T14:57:36.589Z")
 public class ApiClient {
   private Map<String, String> defaultHeaderMap = new HashMap<String, String>();
   private String basePath = "https://www.sm-host.com/modules/addons/rest_ful";

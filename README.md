@@ -28,7 +28,7 @@ Add this dependency to your project's POM:
 <dependency>
     <groupId>com.clodesk.lib</groupId>
     <artifactId>whmcs-api-restfull-client</artifactId>
-    <version>0.0.1</version>
+    <version>0.1.0</version>
     <scope>compile</scope>
 </dependency>
 ```

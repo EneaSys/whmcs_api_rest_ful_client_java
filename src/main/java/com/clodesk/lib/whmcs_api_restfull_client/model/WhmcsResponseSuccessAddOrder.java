@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * WhmcsResponseSuccessAddOrder
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T13:15:38.447Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T14:57:36.589Z")
 public class WhmcsResponseSuccessAddOrder {
   @JsonProperty("result")
   private String result = null;

@@ -13,7 +13,7 @@
 
 package com.clodesk.lib.whmcs_api_restfull_client.invoker;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T13:15:38.447Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T14:57:36.589Z")
 public class StringUtil {
   /**
    * Check if the given array contains the given value (with case-insensitive comparison).

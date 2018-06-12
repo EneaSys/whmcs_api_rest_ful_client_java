@@ -20,9 +20,11 @@ import com.clodesk.lib.whmcs_api_restfull_client.invoker.Configuration;
 import com.clodesk.lib.whmcs_api_restfull_client.model.*;
 import com.clodesk.lib.whmcs_api_restfull_client.invoker.Pair;
 
+import com.clodesk.lib.whmcs_api_restfull_client.model.RequestAcceptOrder;
 import com.clodesk.lib.whmcs_api_restfull_client.model.RequestAddOrder;
 import com.clodesk.lib.whmcs_api_restfull_client.model.RequestUpdateClientProduct;
-import com.clodesk.lib.whmcs_api_restfull_client.model.WhmcsResponseGeneric;
+import com.clodesk.lib.whmcs_api_restfull_client.model.WhmcsResponseErrorGeneric;
+import com.clodesk.lib.whmcs_api_restfull_client.model.WhmcsResponseSuccessAcceptOrder;
 import com.clodesk.lib.whmcs_api_restfull_client.model.WhmcsResponseSuccessAddOrder;
 import com.clodesk.lib.whmcs_api_restfull_client.model.WhmcsResponseSuccessUpdateClientProduct;
 
@@ -32,7 +34,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T13:15:38.447Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-06-12T14:57:36.589Z")
 public class DefaultApi {
   private ApiClient apiClient;
 
@@ -52,6 +54,48 @@ public class DefaultApi {
     this.apiClient = apiClient;
   }
 
+  /**
+   * Accepts a pending order
+   * Accepts a pending order
+   * @param apiParameters  (required)
+   * @return WhmcsResponseSuccessAcceptOrder
+   * @throws ApiException if fails to make API call
+   */
+  public WhmcsResponseSuccessAcceptOrder acceptOrder(RequestAcceptOrder apiParameters) throws ApiException {
+    Object localVarPostBody = apiParameters;
+    
+    // verify the required parameter 'apiParameters' is set
+    if (apiParameters == null) {
+      throw new ApiException(400, "Missing the required parameter 'apiParameters' when calling acceptOrder");
+    }
+    
+    // create path and map variables
+    String localVarPath = "/AcceptOrder";
+
+    // query params
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+
+    
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] {  };
+
+    GenericType<WhmcsResponseSuccessAcceptOrder> localVarReturnType = new GenericType<WhmcsResponseSuccessAcceptOrder>() {};
+    return apiClient.invokeAPI(localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
+      }
   /**
    * Add order
    * Adds an order to a client.
