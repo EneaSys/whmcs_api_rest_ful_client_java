@@ -14,9 +14,11 @@
 package com.clodesk.lib.whmcs_api_restfull_client.api;
 
 import com.clodesk.lib.whmcs_api_restfull_client.invoker.ApiException;
+import com.clodesk.lib.whmcs_api_restfull_client.model.RequestAcceptOrder;
 import com.clodesk.lib.whmcs_api_restfull_client.model.RequestAddOrder;
 import com.clodesk.lib.whmcs_api_restfull_client.model.RequestUpdateClientProduct;
-import com.clodesk.lib.whmcs_api_restfull_client.model.WhmcsResponseGeneric;
+import com.clodesk.lib.whmcs_api_restfull_client.model.WhmcsResponseErrorGeneric;
+import com.clodesk.lib.whmcs_api_restfull_client.model.WhmcsResponseSuccessAcceptOrder;
 import com.clodesk.lib.whmcs_api_restfull_client.model.WhmcsResponseSuccessAddOrder;
 import com.clodesk.lib.whmcs_api_restfull_client.model.WhmcsResponseSuccessUpdateClientProduct;
 import org.junit.Test;
@@ -35,6 +37,22 @@ public class DefaultApiTest {
 
     private final DefaultApi api = new DefaultApi();
 
+    
+    /**
+     * Accepts a pending order
+     *
+     * Accepts a pending order
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void acceptOrderTest() throws ApiException {
+        RequestAcceptOrder apiParameters = null;
+        WhmcsResponseSuccessAcceptOrder response = api.acceptOrder(apiParameters);
+
+        // TODO: test validations
+    }
     
     /**
      * Add order
